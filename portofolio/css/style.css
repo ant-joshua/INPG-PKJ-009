@@ -1,0 +1,31 @@
+#navbar{
+    width: 100vw;
+    background-color: blanchedalmond;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+#navbar ul li{
+    display: inline;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18pt;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#navbar ul li a:hover{
+    background-color: #ff0000;
+    color: white;
+}

@@ -1,0 +1,63 @@
+.box{
+    background-color: blue;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px 5px 10px 15px;
+}
+
+.box-dua{
+    background-color: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+}
+
+.link{
+    font-size: 20pt;
+}
+
+.link:hover{
+    color: red;
+}
+
+.link:link{
+    color: blue;
+}
+
+.link:active{
+    color:green;
+}
+
+.link:visited{
+    background-color: yellow;
+}
+
+.kotak{
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    padding: 10px;
+}
+
+.kotak2{
+    background-color: blue;
+    position: relative;
+    left: 40px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.kotak3{
+    background-color: blue;
+    position: static;
+    left: 40px;
+    padding: 10px;
+}
+
+.kotak4{
+    background-color: hotpink;
+    position: absolute;
+    left: 40px;
+    padding: 10px;
+}
