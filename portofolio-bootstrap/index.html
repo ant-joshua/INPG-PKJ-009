@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand w-75" href="#">
+            <img src="https://global-uploads.webflow.com/5f0d53c042a9ed6288de7f8d/5f68150db527de25e82c86f1_Hacktiv8%20logo%20horizontal%2001%20black.png" class="w-25"/>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inventory</a>
+            </li>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="card mt-1">
+        <div class="card-body">
+          <div class="d-flex flex-lg-row flex-column align-content-center">
+            <div class="col-lg-3">
+              <img
+                src="https://avatars.githubusercontent.com/u/15034309?v=4"
+                class="rounded-circle mx-auto d-block img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-3 p-5">
+              <h5 class="fs-1">Nama Anda</h5>
+              <p class="fs-4">Frontend Designer</p>
+              <div class="mt-5">
+                <button class="btn btn-primary btn-lg">Kontak</button>
+                <button class="btn btn-outline-success btn-lg">Resume</button>
+              </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-column p-5">
+              <div class="d-flex mb-3 flex-row justify-content-between">
+                <div>Availablity</div>
+                <div>Fulltime</div>
+              </div>
+              <div class="d-flex mb-3 flex-row justify-content-between">
+                <div class="text-start">Usia</div>
+                <div class="text-start">17</div>
+              </div>
+              <div class="d-flex mb-3 flex-row justify-content-between">
+                <div>Lokasi</div>
+                <div>Jakarta,Indonesia</div>
+              </div>
+              <div class="d-flex mb-3 flex-row justify-content-between">
+                <div>Pengalaman</div>
+                <div>2 Tahun</div>
+              </div>
+              <div class="d-flex mb-3 flex-row justify-content-between">
+                <div>Email</div>
+                <div>developer@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Nama anda"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="role" class="form-label">Role</label>
+              <input
+                type="text"
+                class="form-control"
+                id="role"
+                placeholder="Frontend Designer"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="availability" class="form-label">Availability</label>
+              <input
+                type="text"
+                class="form-control"
+                id="availability"
+                placeholder="Fulltime"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="usia" class="form-label">Usia</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usia"
+                placeholder="19"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="lokasi" class="form-label">Lokasi</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lokasi"
+                placeholder="Lokasi"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="experience" class="form-label"
+                >Years Experience</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="experience"
+                placeholder="2"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
