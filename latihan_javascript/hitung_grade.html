@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div>
+        <label>Nilai</label>
+        <input type="text" id="nilai">
+    </div>
+    <br>
+
+    <button id="btn-grade" onclick="cekGrade()">Cek Grade</button>
+
+    <br>
+    <br>
+    <div>
+        <label>Hasil</label>
+        <div id="hasil"></div>
+    </div>
+
+    <script>
+
+        function cekGrade() {
+            var nilai = document.getElementById("nilai").value;
+            var grade = "";
+            if (nilai >= 80) {
+                grade = "A";
+            } else if (nilai >= 70) {
+                grade = "B";
+            } else if (nilai >= 60) {
+                grade = "C";
+            } else if (nilai >= 50) {
+                grade = "D";
+            } else {
+                grade = "E";
+            }
+            document.getElementById("hasil").innerHTML = grade;
+        }
+
+    </script>
+</body>
+</html>

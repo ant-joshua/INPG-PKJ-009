@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+</head>
+<body>
+
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+    <div id="hasil"></div>
+
+    <div id="manusia">
+
+    </div>
+    
+
+    <script>
+        var nama = "Antonius Joshua";
+        var lokasi = "Online";
+        var nilai = 70;
+        var transportasi = ["Sepeda", "Motor", "Mobil"];
+
+        var manusia = {
+            nama: "Antonius Joshua",
+            lokasi: "Indonesia",
+            nilai: 70,
+            transportasi: ["Sepeda", "Motor", "Mobil"]
+        };
+        
+
+        document.getElementById("nama").innerHTML = nama;
+
+        document.querySelector("#lokasi").innerHTML = lokasi;
+
+        document.querySelector("#hasil").innerHTML = transportasi[0];
+
+        document.querySelector("#hasil").innerHTML += " " + transportasi[2];
+
+
+        document.querySelector("#manusia").innerHTML = manusia['nama'] + " Mempunyai nilai " + manusia['nilai'] + " dan berada di " + manusia['lokasi'];
+
+        // primitive data type
+        // string , integer ( number ) , null , boolean , undefined , symbol
+
+        // non primitive data type
+        // object , array , function
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

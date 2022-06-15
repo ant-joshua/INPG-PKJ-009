@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <label>Hasil</label>
+            <div id="hasil"></div>
+
+            <div id="foods"></div>
+
+            <div id="hobbies"></div>
+        </div>
+
+        <script>
+            var hitung = 0;
+
+            var foods = [
+                "Bakso",
+                "Nasi Goreng",
+                "Soto",
+                "Sop",
+                "Sate Kambing",
+                "Sate Ayam",
+            ]; // array
+
+            var hobbies = ["Berenang", "Main Game", "Memasak", "Golf"]; // array
+            // while (hitung < 10) {
+            //     hitung++;
+            //     document.getElementById("hasil").innerHTML += hitung + "<br>";
+            // }
+
+            for (var i = 1; i <= 10; i = i + 1) {
+                document.getElementById("hasil").innerHTML += i + "<br>";
+            }
+
+            for (var i = 0; i < foods.length; i++) {
+                document.getElementById("foods").innerHTML += foods[i] + "<br>";
+            }
+
+            hobbies.forEach(function (hobby) {
+                document.getElementById("hobbies").innerHTML += hobby + "<br>";
+            });
+        </script>
+    </body>
+</html>
