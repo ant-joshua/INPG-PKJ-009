@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+</head>
+<body>
+    <div id="hasil"></div>
+    <div id="hasil2"></div>
+
+
+
+    <div id="hasil3"></div>
+    <button onclick="tampilkan_nama_dan_umur('hactiv8',8)"">Klik Saya</button>
+
+    <button onclick="myConfirm()">Klik Saya</button>
+    <br>
+    <br>
+   
+
+    <button onclick="countAngka('down')">
+        Mundur
+    </button>
+    <button onclick="countAngka('up')">
+        Maju
+    </button>
+    <div id="hasilHitung"></div>
+
+    <script>
+
+        let angka = 10;
+
+        function countAngka(count_type) {
+            if (count_type == 'up') {
+                angka++;
+            } else if(count_type == 'down') {
+                angka--;
+            }
+            document.getElementById("hasilHitung").innerHTML = angka;
+        }
+
+        function myConfirm() {
+            var x = confirm("Apakah anda yakin?");
+            if (x) {
+                alert("Anda yakin!");
+            } else {
+                alert("Anda tidak yakin!");
+            }
+        }
+
+        function myPrompt() {
+            var name = prompt("Masukkan Nama Anda");
+            document.getElementById("hasil3").innerHTML = "Hello " + name;
+            if (nama == null || nama == "") {
+                alert("Anda tidak memasukkan nama");
+            } else {
+                alert("Hello " + nama);
+            }
+        }
+
+        function myAlert() {
+            alert("Hello World!");
+            
+        }
+        
+        function tampilkan_nama(nama, umur) {
+            return "Nama Saya " + nama + " dan umur saya " + umur + " tahun";
+        }
+
+        function tampilkan_nama_dan_umur(nama, umur) {
+            document.getElementById("hasil3").innerHTML = tampilkan_nama(nama, umur);
+        }
+
+        document.getElementById("hasil").innerHTML = tampilkan_nama("Antonius Joshua", 20);
+
+        document.getElementById("hasil2").innerHTML = tampilkan_nama("Joshua Antonius", 23);
+
+
+
+    </script>
+</body>
+</html>
